@@ -13,7 +13,7 @@
     ?>
 
 
-    <h1> <?php echo $stringaProva ?>   </h1>
+    <h1> <?php echo $stringaProva ?> proovaaa  </h1>
 
     <h3>
         <?php echo "la lunghezza del titolo:  è: " . strlen($stringaProva) ?>
