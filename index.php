@@ -8,12 +8,19 @@
 </head>
 <body>
     <?php
-        $x = 10;
-        $y = 20;
-        $z = $x + $y 
+        $stringaProva = "Il PHP è un linguaggio di programmazione tanto rivoluzionario quanto semplice: non è tra i più moderni, ma, a distanza di anni dalla sua nascita, continua a godere di grande popolarità. Secondo gli ultimi dati riportati da w3techs, PHP è infatti utilizzato dal 78% dei siti, tra cui i noti Facebook, WordPress e Wikipedia.";
+        $stringaCensurata = str_replace("linguaggio", "***", $stringaProva);
     ?>
 
 
-    <h1>HelloWorld  <?php echo "la somma tra ". $x . " e " . $y . " è " . $z ?> </h1>
+    <h1> <?php echo $stringaProva ?>   </h1>
+
+    <h3>
+        <?php echo "la lunghezza del titolo:  è: " . strlen($stringaProva) ?>
+    </h3>
+
+    <h5>
+        <?php echo $stringaCensurata ?>
+    </h5>
 </body>
 </html>
